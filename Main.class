@@ -1,0 +1,42 @@
+import java.util.Scanner;
+
+public class Main {
+	
+		// Finding the Program that suggests event
+	
+	public static void main(String[] args) {
+		
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("Type the temperature:");
+		
+		int tem = scan.nextInt();
+		
+		String event = "";
+		
+		if(tem < 5 ) {
+			
+			event = "Ski";
+			
+		}
+		else if (tem < 15) {
+			
+			event = "Theatre";
+			
+		}
+		else if (tem < 25 ) {
+			
+			event = "Picnic";
+			
+		}
+		else {
+			
+			event = "Swimming";
+		}
+		
+		System.out.println("Event that is Suggested is : " + event);
+		
+		
+	}
+
+}
